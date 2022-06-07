@@ -1,0 +1,373 @@
+
+objects
+-------
+*** Everything in python is object ***
+*** Every object contains methods*****
+
+
+number
+---------
+number can be integer or decimal or octal or hexa.
+
+aval = 10
+bval  = 23.32
+
+
+string
+-------
+string is defined in single or double or triple quotes.
+
+
+aname = 'python programming'
+bname = "network programming"
+cname = """rest apis"""
+
+
+list ( array in C )
+---------------------
+list contains set of elements.
+Elements can be numbers or strings or any combination
+
+alist = [ 10,20,30]
+blist = ["python","perl",45.34,"java"]
+
+
+tuple  ( immutable , unchangable , uneditable )
+---------
+tuple contains set of elements.
+Elements can be numbers or strings or any 
+******  Elements inside tuple cannot be modified DIRECTLY ******
+
+atup  = (34,32)
+btup  = (87,23,23,"java")
+
+
+dictionary   ( hash map in java , hash in perl , json)
+----------------------------------------------------------------
+dictionary contains key and value pairs
+In dictionary..  key can be integer or string to uniquely identity the value.
+                 value can be number or string or list or tuple or dictionary or any other complex data structure.
+
+syntax:     object = { key:value , key:value ... }
+example:      book = {"chap1":10 ,"chap2":20 }
+              info = {"chap1":[10,"RIta","US"],"chap2":[20,"Rao","Ind"] }
+
+
+
+
+set
+-----
+set contains unordered collection of unique values of same type.
+
+
+
+
+
+
+
+
+level1
+level1
+level1
+level1
+if cond:
+    level2
+    level2
+    level2
+    level2
+level1
+level1
+level1
+
+
+
+
+
+level1
+level1
+level1
+level1
+if cond:
+    level2
+    level2
+    if cond:
+	level3
+	level3
+	level3
+
+level1
+level1
+level1
+
+classification of objects
+---------------------------
+
+
+mutable objects :   list dictionary set
+
+immutable objects:  number  string   tuple
+
+
+builtin functions   ( in the console     just type   dir(__builtin__)   --> will display all the exceptions and funcs
+------------------
+print()
+len()
+range()
+help()
+dir()
+type()
+isinstance()
+input()
+max()
+min()
+sum()
+round()
+ord()
+chr()
+open()
+ 
+
+
+conversion functions   ( converting from one object to another object )
+--------------------
+str()
+int()
+float()
+oct()
+hex()
+list()
+tuple()
+dict()
+set()
+
+
+file handling
+----------------
+
+working with flat files  ( .csv  .conf .log  .txt .properties ....... )
+-----------------------------------------------------------------------
+
+read
+write
+append
+
+
+opening the file
+------------------
+
+syntax:    object = open(filename,mode)
+example:     fobj = open("customers.txt","r")
+             # the file should exist in order to read the file
+
+
+             fobj = open("customers.txt","w")
+             case1: if the file is not existing... file gets created first
+             case2: if the file is already existing ..... it overwrites the existing content
+
+
+             fobj = open("customers.txt","a")
+             case1: if the file is not existing... file gets created first
+             case2: if the file is already ..... it appends the content to the end of the file
+
+
+closing the file
+------------------
+fobj.close()
+
+
+
+read operation
+---------------
+
+- reading line by line using file object
+- fobj.read()
+- fobj.readlines()
+- using csv library
+- using pandas library
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+working with third party files ( docx pdf mp4  pptx zip rar ......)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+write a program to display all the lines from realestate.csv
+---------------------------------------------------------------------------
+
+write a program to display street and city columns data from realestate.csv
+
+---------------------------------------------------------------------------
+
+
+write a  program to display all the unique cities from the file
+
+---------------------------------------------------------------------------
+write a  program to display all the unique cities and its count from the file
+
+
+SACRAMENTO - 343 times
+RIO LINDA  -  32 times
+..
+..
+
+---------------------------------------------------------------------------
+write a program to replace the lines containing
+
+SACRAMENTO  with HYDERABAD
+RIO LINDA  with BANGALORE
+
+and write the output to 07_Jun_2022.csv
+
+
+
+exception handling
+---------------------
+
+There are 2 types of errors
+
+1. syntax error
+2. semantic error or runtime error
+
+Handling the errors in the runtime ( execution time ) is known as exception handling.
+
+
+try
+except
+else
+finally
+raise
+
+
+function | definition | subroutine  | submodule
+---------------------------------------
+- reusability purpose
+- we define the code once and call it for multiple times.
+
+
+- builtin functions   (    dir(__builtin__)    )
+
+
+
+
+- user defined function
+-------------------------
+
+
+
+passing parameters
+------------------
+
+fixed arguments
+default arguments
+keyword arguments
+variable length arguments
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
