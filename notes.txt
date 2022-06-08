@@ -83,6 +83,7 @@ level1
 
 
 
+
 level1
 level1
 level1
@@ -271,11 +272,11 @@ There are 2 types of errors
 Handling the errors in the runtime ( execution time ) is known as exception handling.
 
 
-try
+try     
 except
-else
-finally
-raise
+else    ( optional)
+finally ( optional)
+raise   ( raise exceptions wantedly )
 
 
 function | definition | subroutine  | submodule
@@ -301,6 +302,212 @@ fixed arguments
 default arguments
 keyword arguments
 variable length arguments
+
+
+
+
+
+
+conda create --name devenv python=3.8.5
+
+
+
+
+
+builtin libraries which are generally used
+----------------------------------------
+sys           : system python config information
+urllib.request: working with http
+math          : mathematical operations
+random        : random numbers
+calendar
+smtplib       : sending mails
+ftplib        : ftp'ng the file
+pysftp
+telnetlib     :
+logging       : logging all the events
+shutil        : copy,move,rmtree ....
+filecmp       : comparing directories
+zipfile       : create/extract the zip files
+rarfile       : create/extract the tar files
+tarfile       : create/extract the tarfiles
+getpass       : shadowing the password
+json          : reading/writing json files
+csv           : reading/writing csv files
+xml        
+sysconfig     : system configuration
+collections   : working with dictionaries
+argparse      : passing args from command line
+optparse      : passing args from command line
+time          : working with date and time
+datetime      : working with date and time
+cryptography  : encrypting and decrypting the passwords
+heapq         : performing array operations
+gzip          : reading gunzip files
+re            : validating the strings  ( grep awk sed )
+ipadresss     : validting ip address
+platform      : display platform information
+pathlib       : creating temp files
+threading     : for performing multi threading
+multiprocessing:
+subprocess    : invoking the system commands ( linux or dos commands)
+
+
+
+frequently used third party libraries
+---------------------------------------
+database related
+----------------
+pymysql   :
+cx_Oracle
+pymongo
+pymssql
+
+web frameworks ( developing web applications)
+--------------
+django
+flask
+bottom
+
+analytics/machine learning
+---------------------------
+numpy
+scipy
+pandas
+seaborn
+plotly
+ggplot
+matplotlib   : visualizing data .. bar graph.. pie graph
+scikit-learn :  machine learning algorithms
+
+image processing
+---------------
+pillow
+opencv
+pytorch
+
+
+APIs ( REST API)
+-----
+requests
+
+excel programming
+------------------
+openpyxl    : reading/write excel files
+xlsxwriter  : writing to excel file
+python-docx : working with ms-word
+pandas
+
+networking
+-----------
+paramiko   :  interacting with remote servers
+netmiko    :  connecting to router/switch
+pyping     :  ping any host or ip address
+
+
+
+
+
+
+
+
+
+built-in libraries ( in spyder 8000+ libraries are installed by default)
+                   ( in IDLE   3000+ libraries are installed )
+-------------------
+All the bulitin libraries which are generally used( OS operations, date and time operations , ftp operations, maths operations , string operations ....) are installed with python setup
+
+
+
+third party libraries
+---------------------
+Depending on the requirement( network automation , data analytics , cloud automation , excel operations , database operations ...) developer has to install the third party librarary using
+
+
+- pip tool
+- conda tool
+- downloading and installing it manually from www.pypi.org
+- your local repository ( org specific)
+
+
+
+re library
+-------------
+
+- search something in the string
+- match ( beginning of the string)
+- sub   ( replace patterns)
+- findall ( find all the patterns)
+- split   ( split the string based on pattern)
+
+
+wild char characters or metacharacters
+----------------------------------------
+
+^  $   *  +  .  ?   () []  {}   \d \n \s 
+
+
+^ :  match at the beginning of the string
+     if re.search("^python programming",line):
+
+
+$ : match at the end of the string
+    if re.search("python programming$",line):
+
+* : zero or more occurences of the preceding character
+    if re.search("pyt*hon programming",line):
+
+
++ : one or more occurences of the preceding character
+    if re.search("pyt+hon programming",line):
+
+
+.  : any single character or digit
+     if re.search(".ython",line):
+
+?  : either zero or one occurence of the preceding character
+
+
+
+
+(pattern1|pattern2) :  grouping
+import re
+with open("languages.txt","r") as fobj:
+    for line in fobj:
+        line = line.strip()
+        if re.search("python|java",line):
+            print(line)
+                
+
+{min,max} :  min to max occurences of the preceding character
+ if re.search("pyt{1,5}hon programming",line):
+
+
+ if re.search("pyt{1,}hon programming",line):   # minium one time and max can be any no. of times
+
+
+
+ if re.search("pyt{3}hon programming",line):    # exactly 3 times
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
 
 
 
