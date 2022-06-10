@@ -569,8 +569,67 @@ desc realestate;
 
 
 
+procedural programming
+-----------------------
+-top down approach
+- methods, functions, userdefined functions
 
 
+object oriented programming
+-----------------------------
+- resusability purpose
+
+
+- class
+- object
+- self
+- super
+- access specifiers
+- inheritance
+- polymorphism
+
+
+class :
+-----------
+class is just like blueprint of the model
+Every class contains data members(variables) and member functions
+every class shares the common properties for all the objects.
+( alist and blist are going are have same methods )
+
+object
+-------
+object is the instance of the class
+
+
+self
+-----
+self is the instance of the object
+
+self will the fist argument in the class methods
+
+
+
+constructor
+--------------
+constuctor will be invoked automatically when the object is created
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 
