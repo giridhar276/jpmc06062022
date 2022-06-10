@@ -434,14 +434,14 @@ Depending on the requirement( network automation , data analytics , cloud automa
 re library
 -------------
 
-- search something in the string
-- match ( beginning of the string)
-- sub   ( replace patterns)
-- findall ( find all the patterns)
-- split   ( split the string based on pattern)
+- re.search something in the string
+- re.match ( beginning of the string)
+- re.sub   ( replace patterns)
+- re.findall ( find all the patterns)
+- re.split   ( split the string based on pattern)
 
 
-wild char characters or metacharacters
+wildcard characters or metacharacters
 ----------------------------------------
 
 ^  $   *  +  .  ?   () []  {}   \d \n \s 
@@ -468,6 +468,7 @@ $ : match at the end of the string
 ?  : either zero or one occurence of the preceding character
 
 
+[]  : character class ( one single character)
 
 
 (pattern1|pattern2) :  grouping
@@ -480,15 +481,36 @@ with open("languages.txt","r") as fobj:
                 
 
 {min,max} :  min to max occurences of the preceding character
+
+
  if re.search("pyt{1,5}hon programming",line):
+
+ python
+ pytttthon
+ pyttttthon
+ pyttttttttthon   -> Invalid
+
+\d : digit
+\s : space
+\w : word boundary
+
+
+
+
 
 
  if re.search("pyt{1,}hon programming",line):   # minium one time and max can be any no. of times
-
+ python
+ pytttthon
+ pyttttthon
+ pyttttttttthon 
 
 
  if re.search("pyt{3}hon programming",line):    # exactly 3 times
-
+ python
+ pytttthon
+ pyttttthon
+ pyttttttttthon 
 
 
 
@@ -504,6 +526,46 @@ with open("languages.txt","r") as fobj:
 
 
  
+
+
+mysql commands
+----------------------
+
+display all existing databases
+--------------------------------
+show databases ;
+
+create database
+--------------------
+create database jpmc;
+
+access your database
+--------------------------
+use jpmc;
+
+display tables in your database  ( initialy it is empty )
+----------------------------------
+show tables ;
+
+creating table
+----------------
+create table realestate( street varchar(100) , city varchar(100) );
+
+
+inserting records
+------------------
+insert into realestate values('Hitechcity','Hyderabad');
+insert into realestate values('MG Road','Bangalore');
+
+display all the records
+-----------------------
+select * from realestate ;
+
+
+look at your table structure
+-------------------------------
+desc realestate;
+
 
 
 
